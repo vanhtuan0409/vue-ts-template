@@ -1,0 +1,18 @@
+import { Module } from "vuex";
+import { {{properCase name}}State } from "./state";
+import Mutations from "./mutations";
+import Getter from "./getters";
+import Actions from "./actions";
+
+export class {{properCase name}}Module implements Module<{{properCase name}}State, any> {
+  namespaced = true;
+
+  state: {{properCase name}}State;
+  mutations = Mutations;
+  getters = Getter;
+  actions = Actions;
+
+  constructor() {
+    this.state = new {{properCase name}}State();
+  }
+}

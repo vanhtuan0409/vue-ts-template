@@ -1,0 +1,10 @@
+import { GetterTree, Getter } from "vuex";
+import { {{properCase name}}State } from "./state";
+
+export function Value(state: {{properCase name}}State): number {
+  return 0;
+}
+
+export default <GetterTree<{{properCase name}}State, any>>{
+  Value
+};

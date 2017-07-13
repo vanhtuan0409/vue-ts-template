@@ -1,0 +1,11 @@
+import { ActionTree, ActionContext } from "vuex";
+import { {{properCase name}}State } from "./state";
+
+export function Test(store: ActionContext<{{properCase name}}State, any>) {
+
+}
+
+// export everything compliant to the vuex specification for actions
+export default <ActionTree<{{properCase name}}State, any>>{
+  Test
+};
